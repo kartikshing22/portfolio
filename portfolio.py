@@ -5,20 +5,10 @@ app = Flask(__name__)
 def index():
    return render_template("index.html")
 
-@app.route('/slider')
-def slider():
-   return render_template("sliders.html")
-
 
 @app.route('/projects')
 def projects():
    return render_template("projects.html")
-
-
-@app.route("/new/<int:num>",methods=["GET"])
-def get(num):
-    sqr=[num**2]
-    return jsonify({"num":sqr})
 
 
 if __name__ == '__main__':
