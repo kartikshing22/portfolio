@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = "css/projects.css") }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = "css/carousel.css") }}">
+    <script src="{{ url_for('static', filename = "js/carousel.js") }}"></script>
+    <script src="https://kit.fontawesome.com/bad93ebe01.js" crossorigin="anonymous"></script>
+    
+
+    <link id='favicon' rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-png">
+    <title>Projects | Portfolio Kartikey Singh</title>
+</head>
+<body oncontextmenu="return false">
+
+<!-- navbar starts -->
+<header>
+        <a href="/" class="logo"><i class="fab fa-node-js"></i> Kartikey</a>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+            <li><a href="/#home">Home</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#skills">Skills</a></li>
+            <li><a href="/#education">Education</a></li>
+            <li><a class="active" href="/#work">Work</a></li>
+            <li><a href="/#experience">Experience</a></li>
+            <!-- <li><a href="/#contact">Contact</a></li> -->
+            </ul>
+        </nav>
+</header>
+
+<section class="work" id="work">
+  
+
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+  
+
+  <div class="box-container">
+    <h1>Dog Adoption and ecommerce</h1>
+    <div class="slideshow-container fade" id="slider1">
+      <div class="Containers">
+        <div class="MessageInfo">1 / 8</div>
+        <img src="{{ url_for('static', filename='images/projects/Dog Adoption/main_dog.png') }}" style="width:100%">
+      </div>
+      <div class="Containers">
+        <div class="MessageInfo">2 / 8</div>
+        <img src="{{ url_for('static', filename='images/projects/Dog Adoption/details_dog.png') }}" style="width:100%">
+      </div>
+      <div class="Containers">
+        <div class="MessageInfo">3 / 8</div>
+        <img src="{{ url_for('static', filename='images/projects/Dog Adoption/showcase_gods.png') }}" style="width:100%">
+      </div>
+      <div class="Containers">
+        <div class="MessageInfo">4 / 8</div>
+        <img src="{{ url_for('static', filename='images/projects/Dog Adoption/cart.png') }}" style="width:100%">
+      </div>
+      <div class="Containers">
+        <div class="MessageInfo">5 / 8</div>
+        <img src="{{ url_for('static', filename='images/projects/Dog Adoption/shopping.png') }}" style="width:100%">
+      </div>
+      <div class="Containers">
+        <div class="MessageInfo">6 / 8</div>
+        <img src="{{ url_for('static', filename='images/projects/Dog Adoption/dog_upload.png') }}" style="width:100%">
+      </div>
+      <div class="Containers">
+        <div class="MessageInfo">7 / 8</div>
+        <img src="{{ url_for('static', filename='images/projects/Dog Adoption/login.png') }}" style="width:100%">
+      </div>
+      <div class="Containers">
+        <div class="MessageInfo">8 / 8</div>
+        <img src="{{ url_for('static', filename='images/projects/Dog Adoption/backend.png') }}" style="width:100%">
+      </div>
+      <div style="text-align:center">
+        <span class="dots" onclick="currentSlide(1, 'slider1')"></span>
+        <span class="dots" onclick="currentSlide(2, 'slider1')"></span>
+        <span class="dots" onclick="currentSlide(3, 'slider1')"></span>
+        <span class="dots" onclick="currentSlide(4, 'slider1')"></span>
+        <span class="dots" onclick="currentSlide(5, 'slider1')"></span>
+        <span class="dots" onclick="currentSlide(6, 'slider1')"></span>
+        <span class="dots" onclick="currentSlide(7, 'slider1')"></span>
+        <span class="dots" onclick="currentSlide(8, 'slider1')"></span>
+      </div> 
+    
+      <!-- Back and forward buttons -->
+      <a class="Back" onclick="plusSlides(-1, 'slider1')">&#10094;</a>
+      <a class="forward" onclick="plusSlides(1, 'slider1')">&#10095;</a>
+      <ul class="social-icons">
+          <a class="fa-brands fa-python"></a>
+          <a class="fa-brands fa-html5"></a>  
+          <a class="fa-brands fa-js"></a>
+          <a class="fa-solid fa-database"></a>
+          <a class="fa-brands fa-github" href="https://github.com/kartikshing22/Dog-Adoption"></a>
+        </ul>
+      <div class="project-content">
+        
+      <h3>Project made for Listing Dogs for adoption also included a ecommerce section for Dogs Accessories. Built a Strong authentication system. only authenticated person can list there pets
+      Project id dinamic and we can control verything from backend, User can register them ann list there dogs, shop items from shop section and track there order.
+      website is fully built in Django and used Bootstrap for beautifull UI.</h3>
+    </div>
+    </div>
+  </div>
+
+  <div class="box-container">
+    <h1>Carzone</h1>
+    <div class="slideshow-container fade" id="slider2">
+      <div class="Containers">
+        <div class="MessageInfo">1 / 5</div>
+        <img src="{{ url_for('static', filename='images/projects/carzone/main.png') }}" style="width:100%">
+      </div>
+    
+      <div class="Containers">
+        <div class="MessageInfo">2 / 5</div>
+        <img src="{{ url_for('static', filename='images/projects/carzone/filters.png') }}" style="width:100%">
+      </div>
+    
+      <div class="Containers">
+        <div class="MessageInfo">3 / 5</div>
+        <img src="{{ url_for('static', filename='images/projects/carzone/show.png') }}" style="width:100%">
+      </div>
+      <div class="Containers">
+        <div class="MessageInfo">4 / 5</div>
+        <img src="{{ url_for('static', filename='images/projects/carzone/login.png') }}" style="width:100%">
+      </div>
+      <div class="Containers">
+        <div class="MessageInfo">5 / 5</div>
+        <img src="{{ url_for('static', filename='images/projects/carzone/register.png') }}" style="width:100%">
+      </div>
+      <div style="text-align:center">
+        <span class="dots" onclick="currentSlide(1, 'slider2')"></span>
+        <span class="dots" onclick="currentSlide(2, 'slider2')"></span>
+        <span class="dots" onclick="currentSlide(3, 'slider2')"></span>
+        <span class="dots" onclick="currentSlide(4, 'slider2')"></span>
+        <span class="dots" onclick="currentSlide(5, 'slider2')"></span>
+      </div> 
+    
+      <!-- Back and forward buttons -->
+      <a class="Back" onclick="plusSlides(-1, 'slider2')">&#10094;</a>
+      <a class="forward" onclick="plusSlides(1, 'slider2')">&#10095;</a>
+      <ul class="social-icons">
+          <a class="fa-brands fa-python"></a>
+          <a class="fa-brands fa-html5"></a>  
+          <a class="fa-brands fa-js"></a>
+          <a class="fa-brands fa-google"></a>
+          <a class="fa-solid fa-database"></a>
+          <a class="fa-brands fa-github" href="https://github.com/kartikshing22/carzone"></a>
+        </ul>
+      <div class="project-content">
+        
+      <h3>
+        I developed a dynamic Django project, embodying HTML and Bootstrap templates. Tailoring the Django admin panel enhanced its functionality. The project employed a PostgreSQL database and was subsequently deployed on a production server. This encompassed the creation of multiple Django apps, managed through Git version control. The customization of Django admin, along with adept database schema design, models, and migrations, ensured seamless user experiences. Implementing search functionality enriched user interactions. Robust user authentication mechanisms were implemented, including options for Facebook and Google login. Lastly, email communication was integrated, completing the project's comprehensive features and functionalities.</h3>
+    </div>
+    </div>
+  </div>
+  
+
+
+</section>
+<!-- work project section ends -->
+
+<!-- scroll top btn -->
+<a href="#work" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
+
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+<script src="{{ url_for('static', filename = "js/projects.js") }}"></script>
+<script src="{{ url_for('static', filename = "js/carousel.js") }}"></script>
+
+</body>
+</html>
